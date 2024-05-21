@@ -1,0 +1,23 @@
+AddCSLuaFile()
+SWEP.PrintName = "#jb.defibrillator"
+SWEP.Spawnable = false
+SWEP.Slot = 5
+SWEP.SlotPos = 10
+SWEP.Weight = 5
+SWEP.WorldModel = Model("models/weapons/w_slam.mdl")
+SWEP.ViewModel = Model("models/weapons/c_slam.mdl")
+SWEP.Primary.ClipSize = -1
+SWEP.Primary.DefaultClip = -1
+SWEP.Primary.Automatic = false
+SWEP.Primary.Ammo = "none"
+SWEP.Secondary.ClipSize = -1
+SWEP.Secondary.DefaultClip = -1
+SWEP.Secondary.Automatic = false
+SWEP.Secondary.Ammo = "none"
+SWEP.DrawWeaponInfoBox = false
+SWEP.ViewModelFOV = 60
+SWEP.DrawAmmo = true
+SWEP.UseHands = true
+SWEP.UsageDelay = CreateConVar("jb_defibrillator_delay", "1.5", bit.bor(FCVAR_ARCHIVE, FCVAR_NOTIFY, FCVAR_REPLICATED), "Delay between defibrillator usage.")
+SWEP.HoldType = "duel"
+SWEP.SecondaryAttack = function(self) end

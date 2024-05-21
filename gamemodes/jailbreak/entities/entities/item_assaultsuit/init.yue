@@ -1,9 +1,0 @@
-ENT.Type = "point"
-ENT.Think = =>
-    for entity in *ents.FindInSphere( @GetPos!, 16 )
-        if entity\IsPlayer! and entity\Alive!
-            amount = entity\IsWarden! and 100 or 50
-            if entity\Armor! < amount
-                entity\SetArmor( math.min( amount, entity\GetMaxArmor! ) )
-                @Remove!
-                break

@@ -1,5 +1,0 @@
-ENT.Type = "anim"
-ENT.Think = =>
-    @FrameAdvance!
-	@NextThink( CurTime! + 0.5 )
-	return true
